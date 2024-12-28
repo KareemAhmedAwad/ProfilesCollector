@@ -1,4 +1,4 @@
-from  content_extractor import ContentExtractor
+from ..content_extractor import ContentExtractor
 from .youtube_extractor import YouTubeExtractor
 from .instagram_extractor import InstagramExtractor
 from .twitter_extractor import TwitterExtractor

@@ -1,11 +1,12 @@
 from typing import List, Dict
+from dataclasses import dataclass
 
+@dataclass
 class PersonInfo:
-    def __init__(self, name: str, other_names: List[str], nationality: str, profiles: Dict[str, str]):
-        self.name = name
-        self.other_names = other_names
-        self.nationality = nationality
-        self.profiles = profiles
+    name: str
+    other_names: List[str]
+    nationality: str
+    profiles: Dict[str, str]
 
     def to_dict(self) -> Dict:
         return {
